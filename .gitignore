@@ -1,0 +1,17 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+.idea/  
+out/  
+test-results/  
+playwright-report/  
+release/
+ 
+shots/ 
+
+# 内部架构/设计文档：仅本地维护，不随开源仓库发布
+docs/ARCHITECTURE.md
+docs/UI-PROTOTYPE.md
+docs/diagrams/
+docs/prototype/

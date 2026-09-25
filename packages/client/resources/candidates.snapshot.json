@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-24T15:19:07.822Z",
+  "family": "v4",
+  "groups": [
+    {
+      "domain": "api.github.com",
+      "candidates": [
+        "20.205.243.168",
+        "172.182.252.137"
+      ]
+    },
+    {
+      "domain": "avatars.githubusercontent.com",
+      "candidates": [
+        "185.199.109.133",
+        "185.199.108.133",
+        "185.199.110.133",
+        "185.199.111.133"
+      ]
+    },
+    {
+      "domain": "codeload.github.com",
+      "candidates": [
+        "140.82.121.10"
+      ]
+    },
+    {
+      "domain": "collector.github.com",
+      "candidates": [
+        "140.82.113.21",
+        "140.82.112.21",
+        "140.82.112.22",
+        "140.82.113.22"
+      ]
+    },
+    {
+      "domain": "gist.githubusercontent.com",
+      "candidates": [
+        "185.199.108.133",
+        "185.199.109.133",
+        "185.199.110.133",
+        "185.199.111.133"
+      ]
+    },
+    {
+      "domain": "github.com",
+      "candidates": [
+        "140.82.112.4"
+      ]
+    },
+    {
+      "domain": "github.githubassets.com",
+      "candidates": [
+        "185.199.110.215",
+        "185.199.108.215",
+        "185.199.109.215",
+        "185.199.111.215"
+      ]
+    },
+    {
+      "domain": "objects.githubusercontent.com",
+      "candidates": [
+        "185.199.108.133",
+        "185.199.110.133",
+        "185.199.109.133",
+        "185.199.111.133"
+      ]
+    },
+    {
+      "domain": "raw.githubusercontent.com",
+      "candidates": [
+        "185.199.110.133",
+        "185.199.108.133",
+        "185.199.111.133",
+        "185.199.109.133"
+      ]
+    }
+  ]
+}

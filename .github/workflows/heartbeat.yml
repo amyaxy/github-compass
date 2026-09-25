@@ -1,0 +1,29 @@
+name: heartbeat
+
+# GitHub 对连续 60 天无活动的仓库自动禁用 scheduled workflow，
+# 每月 1 号提交一次保活时间戳，防止 probe 调度被静默禁用。
+
+on:
+  schedule:
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  beat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: update heartbeat
+        run: date -u +%Y-%m-%dT%H:%M:%SZ > data/.heartbeat
+
+      - name: commit heartbeat
+        run: |
+          git config user.name "github-compass-bot"
+          git config user.email "github-compass-bot@users.noreply.github.com"
+          git add data/.heartbeat
+          git commit -m "chore: heartbeat $(date -u +%Y-%m-%d)"
+          git push

@@ -1,0 +1,44 @@
+{
+  "name": "github-compass",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "GitHubCompass —— GitHub 访问守护：跨平台桌面客户端，自动探测官方 IP、本地实测选优、备份写入 hosts 并闭环保活。",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amyaxy/github-compass.git"
+  },
+  "keywords": [
+    "github",
+    "hosts",
+    "dns",
+    "electron",
+    "vue3",
+    "network-optimization"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "probe": "tsx packages/probe/src/cli.ts",
+    "typecheck": "tsc --noEmit -p packages/core && tsc --noEmit -p packages/probe",
+    "core:selftest": "tsx packages/core/scripts/selftest.ts",
+    "client:dev": "pnpm -C packages/client dev",
+    "client:build": "pnpm -C packages/client build",
+    "client:selftest": "pnpm -C packages/client selftest",
+    "verify:data": "node scripts/verify-data.mjs",
+    "verify:all": "pnpm typecheck && pnpm core:selftest && pnpm probe && pnpm verify:data && pnpm client:selftest && pnpm client:build",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "test:all": "pnpm typecheck && pnpm test && pnpm client:build && pnpm test:e2e"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^20.14.0",
+    "playwright": "^1.63.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0",
+    "vitest": "^5.0.1"
+  }
+}

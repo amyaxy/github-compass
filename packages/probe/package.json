@@ -1,0 +1,9 @@
+{
+  "name": "@github-compass/probe",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@github-compass/core": "workspace:*"
+  }
+}
