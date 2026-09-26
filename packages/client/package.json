@@ -36,6 +36,33 @@
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
       "artifactName": "GitHubCompass-Setup-${version}.${ext}"
+    },
+    "mac": {
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ],
+      "category": "public.app-category.utilities",
+      "icon": "resources/icon.png",
+      "artifactName": "GitHubCompass-${version}-${arch}.${ext}"
+    },
+    "dmg": {
+      "window": {
+        "width": 540,
+        "height": 380
+      }
     }
   },
   "dependencies": {

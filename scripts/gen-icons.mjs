@@ -24,7 +24,7 @@ const FULL = (id) => `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64
 <path d="M41 23 L36.4 35.4 L23 41 L27.6 28.6 Z" fill="#fff"/>
 <circle cx="32" cy="32" r="2.8" fill="#0d1117"/></svg>`;
 
-const SIZES = [16, 24, 32, 48, 64, 128, 256].map((px) => ({ px, svg: FULL }));
+const SIZES = [16, 24, 32, 48, 64, 128, 256, 512].map((px) => ({ px, svg: FULL }));
 
 // 每尺寸独立 gradient id，避免同页多 svg 引用冲突
 const cells = SIZES.map((s) => `<div id="s${s.px}" style="width:${s.px}px;height:${s.px}px">${s.svg(s.px)}</div>`).join('');
@@ -60,7 +60,7 @@ for (const s of SIZES) {
 }
 await app.close();
 
-writeFileSync(path.join(RES, 'icon.png'), pngs[256]);
+writeFileSync(path.join(RES, 'icon.png'), pngs[512]); // mac icns 需 ≥512；win 也兼容
 writeFileSync(path.join(RES, 'tray.png'), pngs[32]);
 
 // 多帧 ICO
@@ -84,4 +84,4 @@ frames.forEach((px, i) => {
 });
 writeFileSync(path.join(RES, 'icon.ico'), Buffer.concat([header, ...frames.map((px) => pngs[px])]));
 
-console.log('icons written: icon.png(256) / tray.png(32) / icon.ico(7 frames 16~256) — 全尺寸完整字形');
+console.log('icons written: icon.png(512, mac 要求) / tray.png(32) / icon.ico(7 frames 16~256) — 全尺寸完整字形');
