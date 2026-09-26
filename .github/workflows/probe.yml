@@ -36,6 +36,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "no data change, skip commit"
           else
-            git commit -m "data: probe update $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git commit -m "data: probe update $(TZ='Asia/Shanghai' date +%Y-%m-%dT%H:%M:%S+08:00)"
             git push
           fi
