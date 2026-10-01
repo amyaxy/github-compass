@@ -1,11 +1,11 @@
 # GitHubCompass Host Start
-# Update time: 2026-10-01T05:36:33+08:00
-# Version: v21
+# Update time: 2026-10-01T10:49:12+08:00
+# Version: v22
 # Star me: https://github.com/amyaxy/github-compass
 172.182.252.137 api.github.com
 185.199.110.133 avatars.githubusercontent.com
-140.82.116.10 codeload.github.com
-140.82.112.21 collector.github.com
+172.182.252.132 codeload.github.com
+140.82.114.22 collector.github.com
 185.199.110.133 gist.githubusercontent.com
 172.182.252.133 github.com
 185.199.110.215 github.githubassets.com
