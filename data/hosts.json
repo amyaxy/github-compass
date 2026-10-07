@@ -1,71 +1,71 @@
 {
-  "version": 45,
-  "generatedAt": "2026-10-07T20:12:03+08:00",
+  "version": 46,
+  "generatedAt": "2026-10-08T06:22:18+08:00",
   "probeSource": "github-actions",
   "family": "v4",
   "entries": [
     {
       "domain": "api.github.com",
       "ip": "172.182.252.137",
-      "latencyMs": 7,
+      "latencyMs": 11,
       "tlsVerified": true,
-      "checkedAt": "2026-10-07T20:12:03+08:00"
+      "checkedAt": "2026-10-08T06:22:18+08:00"
     },
     {
       "domain": "avatars.githubusercontent.com",
       "ip": "185.199.110.133",
-      "latencyMs": 8,
+      "latencyMs": 19,
       "tlsVerified": true,
-      "checkedAt": "2026-10-07T20:12:03+08:00"
+      "checkedAt": "2026-10-08T06:22:18+08:00"
     },
     {
       "domain": "codeload.github.com",
       "ip": "172.182.252.132",
-      "latencyMs": 6,
+      "latencyMs": 12,
       "tlsVerified": true,
-      "checkedAt": "2026-10-07T20:12:03+08:00"
+      "checkedAt": "2026-10-08T06:22:18+08:00"
     },
     {
       "domain": "collector.github.com",
-      "ip": "140.82.112.21",
-      "latencyMs": 109,
+      "ip": "140.82.113.22",
+      "latencyMs": 118,
       "tlsVerified": true,
-      "checkedAt": "2026-10-07T20:12:03+08:00"
+      "checkedAt": "2026-10-08T06:22:18+08:00"
     },
     {
       "domain": "gist.githubusercontent.com",
       "ip": "185.199.110.133",
-      "latencyMs": 7,
+      "latencyMs": 16,
       "tlsVerified": true,
-      "checkedAt": "2026-10-07T20:12:03+08:00"
+      "checkedAt": "2026-10-08T06:22:18+08:00"
     },
     {
       "domain": "github.com",
       "ip": "172.182.252.133",
-      "latencyMs": 20,
+      "latencyMs": 9,
       "tlsVerified": true,
-      "checkedAt": "2026-10-07T20:12:03+08:00"
+      "checkedAt": "2026-10-08T06:22:18+08:00"
     },
     {
       "domain": "github.githubassets.com",
       "ip": "185.199.110.215",
-      "latencyMs": 7,
+      "latencyMs": 13,
       "tlsVerified": true,
-      "checkedAt": "2026-10-07T20:12:03+08:00"
+      "checkedAt": "2026-10-08T06:22:18+08:00"
     },
     {
       "domain": "objects.githubusercontent.com",
       "ip": "185.199.110.133",
-      "latencyMs": 11,
+      "latencyMs": 16,
       "tlsVerified": true,
-      "checkedAt": "2026-10-07T20:12:03+08:00"
+      "checkedAt": "2026-10-08T06:22:18+08:00"
     },
     {
       "domain": "raw.githubusercontent.com",
       "ip": "185.199.110.133",
-      "latencyMs": 13,
+      "latencyMs": 26,
       "tlsVerified": true,
-      "checkedAt": "2026-10-07T20:12:03+08:00"
+      "checkedAt": "2026-10-08T06:22:18+08:00"
     }
   ]
 }
